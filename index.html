@@ -1,11 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FruityParadise</title>
+    <!-- tailwind and daisyui link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- coustom css -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/327141d4b6.js" crossorigin="anonymous"></script>
+
+    <!-- google font lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- styles -->
+    <style>
+        .lato-font{
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
 </head>
-<body>
-    <h1>hi</h1>
+
+<body class="lato-font">
+
+    <header class="max-w-screen-xl mx-auto my-6">
+        <nav>
+            <div class="navbar bg-base-100 text-black md:text-white md:bg-[#F85559] rounded-full px-12 flex flex-row-reverse lg:flex-row justify-between items-center">
+                <div>
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 md:bg-[#F85559] relative right-1 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+                            <input type="text" placeholder="Search" class="input input-bordered rounded-full w-48 lg:w-auto" />
+                        </ul>
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                        <ul class="menu menu-horizontal px-1">
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" flex flex-row">
+                    <img class="w-10 " src="images/logo.png" alt="">
+                    <a class="btn btn-ghost normal-case text-2xl md:text-4xl">Biker Zone</a>
+                </div>
+                <div class="form-control hidden lg:block">
+                    <input type="text" placeholder="Search" class="input input-bordered rounded-full w-24 md:w-auto" />
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="max-w-screen-xl mx-auto">
+
+    </main>
+
+    <footer>
+
+    </footer>
 </body>
+
 </html>
